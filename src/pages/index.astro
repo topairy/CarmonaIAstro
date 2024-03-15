@@ -1,19 +1,40 @@
 ---
-
+import "../styles/global.css";
+import PageHeader from "../components/PageHeader.astro";	
+import PageFooter from "../components/PageFooter.astro";
+import PageContent from "../components/PageContent.astro";
+import Semesters from "../components/Semesters.astro";
+import Features from "../components/Features.astro";
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro - Izac Carmona</title>
-	</head>
-	<body>
-		<h1>Astro - Izac Carmona</h1>
-		<h2>Netflify</h2>
-<p>It is easy to publish with Astro using Netflify</p>
-<p>Localhost and Online Publishing</p>
-	</body>
-</html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content={Astro.generator} />
+<title>Theme Build For Astro</title>
+</head>
+<body>
+<!--
+pageheader  .
+showcase
+features    . 
+semesters   . 
+pagefooter  . 
+-->
+
+<PageHeader />
+<!-- begin showcase -->
+<section id="showcase">showcase</section>
+<!-- End Showcase -->
+
+<Features />
+
+<PageContent />
+
+<Semesters />
+
+<PageFooter />
+</body>
+</html> 

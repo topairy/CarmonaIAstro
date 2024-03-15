@@ -1,0 +1,476 @@
+		/*CSS Variables  */
+		/* Set Page Colors */
+	:root {
+	--color-primary: #2d6858;
+	--color-secondary: #f0ad4a;
+	}
+	html 
+	{
+	font-size: 62.5%;
+	/* Allows you to use rems instead of pixels for sizing *//*
+	.5rem = 5px
+	1.0rem = 10px
+	1.6rem = 16px
+	2.0rem = 20px
+	6.0rem = 60px
+	*/
+	}
+	
+	/* Browser Reset */
+	*,
+	*::before,
+	*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	
+	/*  Fix Browser bounce on macs*/
+	body {
+	overflow-x: auto;
+	width: 100%;
+	overscroll-behavior: none;
+	/* Allows for easy pixel calcs in rems*/
+	font-size: 1.6rem;
+	}
+ /* ALL SECTIONS 
+ 
+ pageheader
+ showcase
+ features
+ pagecontent
+ semesters
+ pagefooter
+ */
+
+	/* General Mobile First CSS */
+	body
+	{
+	 /* padding:1.0rem; */
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.7;
+	background-color: #f8fafc;
+	color: #333;
+	}
+	/* Link Styles */
+	a
+	{
+		color: red;
+		text-decoration: none;
+	}
+	/* Paragraph Styles */
+	p
+	{
+		margin: 1rem 0 1rem 0;
+	}
+	/* Header Styles*/
+	h1,h2
+	{
+		text-align: center;
+	}
+	h1,h2,h3
+	{
+		line-height: 1.2;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+	}
+	/* List Styles */
+	li
+	{
+		line-height: 2;
+	}
+/* Container Styles */
+	.container {
+	/* Maybe delete below ---------------------------------*/
+	background-color: white;
+	min-height: 10rem;
+	/* Maybe Delete above ---------------------------------*/
+	
+	max-width: 120rem;
+	margin: auto;
+	padding: 0rem 3rem 0rem 3rem;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header section styles */
+	#pageheader 
+	{
+		background-color: var(--color-primary);
+		height: 7.0rem;
+	}
+	/* Special header container styles */
+	#pageheader .container
+	{
+		background-color: aquamarine;
+		border: 2px dashed red;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		padding: 0 2rem 0 2rem;
+	}
+	.logo img
+	{
+		height: 6rem;
+	}
+
+	.logo:hover
+	{
+		animation-name: swim;
+		animation-duration: .5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function:linear;
+	}
+	@keyframes swim 
+	{
+		0%{transform: rotate(0deg);}	
+		100%{transform: rotate(45deg);}
+	}
+
+	/* Header menu */
+	#menu
+	{
+		background-color: #f0ad4a;
+		border: 2px dashed red;
+		display: flex;
+		justify-content: space-between;
+		width: 20rem;
+		list-style-type: none;
+		background-color: none;
+	}
+	#menu li a
+	{
+		color: #fff;
+	}
+	/* End of header selection styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	#showcase 
+	{
+		border: .2rem solid none;
+		background-color: var(--color-primary);
+		padding: 3rem;
+		background-image: linear-gradient(to bottom, var(--color-primary) var(--color-secondary));
+		background-image: url(images/pond.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: bottom left;
+	}
+
+	#showcasetext
+	{
+		border: .2rem solid none;
+		color: #fff;
+		text-align: center;
+		margin: 5rem auto;
+		max-width: 60rem;
+	}
+
+	#showcase h1
+	{
+		font-size: 5rem;
+		margin-bottom: 2rem;
+		text-shadow: 0 0 1rem black;
+	}
+	#showcase blockquote
+	{
+		font-size: 2.4rem;
+		margin-bottom: 2rem
+	}
+	#showcaseimage
+	{
+		text-align: center;
+	}
+	#showecaseimage img
+	{
+		border-radius: 1rem;
+		margin: auto;
+	}
+	#showcaseintro
+	{
+		color: #fff;
+		text-align: center;
+		font-size: 3rem;
+	}
+
+/* Hide big logos/technologies for mobile */
+#logobig
+{
+	display: none;
+}
+#logosmall
+{
+	 width: 30rem;
+}
+/* end of showcase section styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Features Section*/
+#features .container
+{
+	padding: 2rem;
+	background-color: burlywood;
+	border: 2px dashed red;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.card
+{
+	background-color: #fff;
+	padding: 2rem;
+	box-shadow: 0rem 0rem 1rem silver;
+	margin-bottom: 2rem;
+	border-radius: 2.5rem;
+}
+/* end features section styles */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Page Content section */
+#pagecontent
+{
+	background-color: none;
+	padding: 2rem 0 2rem 0;
+}
+#pagecontent h2, h3
+{
+	padding: 2rem;
+}
+#pagecontent h2
+{
+	font-size: 4rem;
+}
+#pagecontent h3
+{
+	font-size: 2.5rem;
+}
+/* end of page content section styles */
+
+
+
+
+
+
+
+
+
+
+
+/* Semesters Section */
+#semesters
+{
+	padding: 2rem 0rem 2rem 0rem;
+}
+#semesters h2, #semesters h3
+{
+	padding: 2rem 0 2rem 0;
+}
+#semesters h2
+{
+	font-size: 4rem;
+}
+#semesters h3
+{
+	font-size: 2.5rem;
+}
+.assignments a
+{
+color: #2d6858;
+}
+/* end of semesters section styles */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer section */
+
+#pagefooter
+{
+	background-color: var(--color-primary);
+	color: #fff;
+	text-align: center;
+	padding: 2rem;
+	padding-top: 6rem;
+}
+#pagefooter .container
+{
+	background-color: chocolate;
+	border: 2px dashed red;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#pagefooter a
+{
+	color: #fff;
+}
+#pagefooter a:hover
+{
+	color: #b7c1bf;
+}
+#pagefooter h3
+{
+	padding-bottom: 3rem;
+}
+#pagefooter #quote
+{
+	text-align: left;
+}
+#pagefooterlinks
+{
+	display: none;
+}
+/* end Footer section styles */
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* Media Queries */
+@media only screen and (min-width: 320px)
+{
+	#features
+	{
+		background-color: magenta;
+	}
+}
+@media only screen and (min-width: 480px)
+{
+	#features
+	{
+		background-color: yellow;
+	}
+}
+@media only screen and (min-width: 768px)
+{
+	#features
+	{
+		background-color: lime;
+	}
+	.card
+	{
+		flex-basis: 30%;
+	}
+	#features .container
+	{
+		flex-direction: row;
+	}
+	h1,h2
+	{
+		text-align: left;
+	}
+}
+@media only screen and (min-width: 1024px)
+{z
+	#features
+	{
+		background-color: coral;
+	}
+	#logobig
+	{
+		display: block;
+		margin: auto;
+	}
+	#logosmall
+	{
+		display: none;
+	}
+}
+@media only screen and (min-width: 1200px)
+{
+	#features
+	{
+		background-color: steelblue;
+	}
+	#pagefooterlinks
+	{
+		display: block ;
+	}
+}
+
+
