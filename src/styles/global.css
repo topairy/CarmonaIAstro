@@ -170,7 +170,7 @@
 	#showcase 
 	{
 		padding: 30px;
-		background-image: url(public/images/Spiderain.jpg);
+		background-image: url(/images/Spiderain.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		min-height: 500px;
