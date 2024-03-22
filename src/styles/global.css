@@ -1,8 +1,8 @@
 		/*CSS Variables  */
 		/* Set Page Colors */
 	:root {
-	--color-primary: #2d6858;
-	--color-secondary: #f0ad4a;
+	--color-primary: #000000;
+	--color-secondary: #B2C7D2;
 	}
 	html 
 	{
@@ -47,21 +47,20 @@
 	body
 	{
 	 /* padding:1.0rem; */
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.7;
-	background-color: #f8fafc;
-	color: #333;
+	font-family:'Times New Roman', Times, serif;
+	line-height: 1.5;
+	background-color: #1C1D1E;
+	color: white;
 	}
 	/* Link Styles */
 	a
 	{
-		color: red;
 		text-decoration: none;
 	}
 	/* Paragraph Styles */
 	p
 	{
-		margin: 1rem 0 1rem 0;
+		margin: 1rem 0;
 	}
 	/* Header Styles*/
 	h1,h2
@@ -80,14 +79,10 @@
 	}
 /* Container Styles */
 	.container {
-	/* Maybe delete below ---------------------------------*/
-	background-color: white;
-	min-height: 10rem;
-	/* Maybe Delete above ---------------------------------*/
 	
 	max-width: 120rem;
 	margin: auto;
-	padding: 0rem 3rem 0rem 3rem;
+	padding: 0 30px;
 	}
 	
 
@@ -108,23 +103,21 @@
 /* header section styles */
 	#pageheader 
 	{
-		background-color: var(--color-primary);
-		height: 7.0rem;
+		background-color: #2C4D54 ;
+		height: 70px;
 	}
 	/* Special header container styles */
 	#pageheader .container
 	{
-		background-color: aquamarine;
-		border: 2px dashed red;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
-		padding: 0 2rem 0 2rem;
+		padding: 0 2px 0 2px;
 	}
 	.logo img
 	{
-		height: 6rem;
+		height: 45px;
 	}
 
 	.logo:hover
@@ -144,17 +137,19 @@
 	/* Header menu */
 	#menu
 	{
-		background-color: #f0ad4a;
-		border: 2px dashed red;
 		display: flex;
 		justify-content: space-between;
-		width: 20rem;
+		width: 200px;
 		list-style-type: none;
-		background-color: none;
+	}
+
+	.menu li
+	{
+		padding: 0 10px 0 10px;
 	}
 	#menu li a
 	{
-		color: #fff;
+		color: white;
 	}
 	/* End of header selection styles */
 
@@ -174,31 +169,27 @@
 	
 	#showcase 
 	{
-		border: .2rem solid none;
-		background-color: var(--color-primary);
-		padding: 3rem;
-		background-image: linear-gradient(to bottom, var(--color-primary) var(--color-secondary));
-		background-image: url(images/pond.png);
+		padding: 30px;
+		background-image: url(public/images/Spiderain.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+		min-height: 500px;
 		background-attachment: fixed;
-		background-position: bottom left;
+		background-position: center top;
 	}
 
 	#showcasetext
 	{
-		border: .2rem solid none;
-		color: #fff;
+		color: white;
 		text-align: center;
-		margin: 5rem auto;
-		max-width: 60rem;
+		margin: 50px auto;
+		max-width: 500px;
 	}
 
 	#showcase h1
 	{
-		font-size: 5rem;
+		font-size: 50px;
 		margin-bottom: 2rem;
-		text-shadow: 0 0 1rem black;
 	}
 	#showcase blockquote
 	{
@@ -208,15 +199,16 @@
 	#showcaseimage
 	{
 		text-align: center;
+		background-color: none;
 	}
 	#showecaseimage img
 	{
 		border-radius: 1rem;
-		margin: auto;
+		margin: 0 auto;
 	}
 	#showcaseintro
 	{
-		color: #fff;
+		color: white;
 		text-align: center;
 		font-size: 3rem;
 	}
@@ -225,10 +217,12 @@
 #logobig
 {
 	display: none;
+	background-color:red;
 }
 #logosmall
 {
-	 width: 30rem;
+	width: 30rem;
+	background-color: red;
 }
 /* end of showcase section styles */
 
@@ -250,9 +244,7 @@
 /* Features Section*/
 #features .container
 {
-	padding: 2rem;
-	background-color: burlywood;
-	border: 2px dashed red;
+background-color: #1C1D1E;
 	display: flex;
 	gap: 1rem;
 	justify-content: space-between;
@@ -260,13 +252,14 @@
 }
 .card
 {
-	background-color: #fff;
+	background-color: #171A1B;
 	padding: 2rem;
-	box-shadow: 0rem 0rem 1rem silver;
+	box-shadow: 0rem 0rem 10px silver;
 	margin-bottom: 2rem;
-	border-radius: 2.5rem;
+	flex-basis: 28%;
+	box-shadow: 0px 10px 30px 10px white;
 }
-/* end features section styles */
+/* end features sectiosn styles */
 
 
 
@@ -282,12 +275,11 @@
 /* Page Content section */
 #pagecontent
 {
-	background-color: none;
-	padding: 2rem 0 2rem 0;
+	margin: 20px 0;
 }
 #pagecontent h2, h3
 {
-	padding: 2rem;
+	margin: 20px 0;
 }
 #pagecontent h2
 {
@@ -295,7 +287,7 @@
 }
 #pagecontent h3
 {
-	font-size: 2.5rem;
+	font-size: 25px;
 }
 /* end of page content section styles */
 
@@ -312,7 +304,7 @@
 /* Semesters Section */
 #semesters
 {
-	padding: 2rem 0rem 2rem 0rem;
+margin:  20px 0;
 }
 #semesters h2, #semesters h3
 {
@@ -347,7 +339,7 @@ color: #2d6858;
 
 #pagefooter
 {
-	background-color: var(--color-primary);
+	background-color: #000000;
 	color: #fff;
 	text-align: center;
 	padding: 2rem;
@@ -355,15 +347,14 @@ color: #2d6858;
 }
 #pagefooter .container
 {
-	background-color: chocolate;
-	border: 2px dashed red;
+	background-color: black;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 }
 #pagefooter a
 {
-	color: #fff;
+	color: white;
 }
 #pagefooter a:hover
 {
@@ -465,7 +456,7 @@ color: #2d6858;
 {
 	#features
 	{
-		background-color: steelblue;
+		background-color: #1C1D1E;
 	}
 	#pagefooterlinks
 	{
