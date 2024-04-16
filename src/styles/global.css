@@ -193,9 +193,37 @@
 	}
 	#showcase blockquote
 	{
-		font-size: 2.4rem;
+		font-size: 1.9rem;
 		margin-bottom: 2rem
 	}
+
+	blockquote::before
+	{
+		font-size: 61px;
+		background-color: none;
+		content: "“";
+	}
+
+	blockquote::after
+	{
+		font-size: 64px;
+		background-color: none;
+		content: "”";
+	}
+
+	[data-source]
+	{
+		color: white;
+	}
+
+
+
+
+
+
+
+
+
 	#showcaseimage
 	{
 		text-align: center;
