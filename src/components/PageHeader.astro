@@ -1,4 +1,71 @@
+---
+
+---
+
+
+
 <!-- Header Selction -->
+<style>
+    /* header section styles */
+	#pageheader 
+	{
+		background-color: #2C4D54 ;
+		height: 70px;
+	}
+	/* Special header container styles */
+	#pageheader .container
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		padding: 0 2px 0 2px;
+	}
+	.logo img
+	{
+		height: 45px;
+	}
+
+	.logo:hover
+	{
+		animation-name: swim;
+		animation-duration: .5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function:linear;
+	}
+	@keyframes swim 
+	{
+		0%{transform: rotate(0deg);}	
+		100%{transform: rotate(45deg);}
+	}
+
+	/* Header menu */
+	#menu
+	{
+		display: flex;
+		justify-content: space-between;
+		width: 200px;
+		list-style-type: none;
+	}
+
+	.menu li
+	{
+		padding: 0 10px 0 10px;
+	}
+	#menu li a
+	{
+		color: white;
+	}
+	/* End of header selection styles */
+
+
+
+
+</style>
+
+
+
 <header id="pageheader">
     <div class="container">
         <div class="logo">
@@ -9,9 +76,12 @@
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="markdown.html">Markdown</a></li>
             </ul>
         </nav>
     </div>
     <!-- End Header -->
 </header>
+
+
+
